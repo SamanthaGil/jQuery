@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+ }
+
+body, button{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	background-color: whitesmoke;
+	overflow: scroll;
+}
+
+.content{
+	display: block;
+	position: relative;
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+	padding: 10px;
+	padding-top: 2%;
+	min-height: 100%;
+}
+
+ul{
+	padding: 0;
+}
+
+ul li{
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+}
+
+.botoes{
+	margin-top: 20px;
+}
+
+.campo-digitacao {
+    font-size: 20px;
+    height: 130px;
+}
+
+.frase .fraseDescricao{
+    font-size: 20px;
+}
+
+.campo-desativado{
+	background-color: lightgrey;
+}
+
+.icones{
+	vertical-align: middle;
+}
+
+.campo-correto{
+    border: 3px solid green;
+}
+
+.campo-errado{
+    border: 3px solid red;
+}
+
+[disabled] {
+    pointer-events: none;
+}
+
+.placar{
+	border: 1px solid lightgray;
+	margin-top: 50px;
+	padding: 10px;
+	display: none;
+}

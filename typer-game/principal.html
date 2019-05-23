@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <title>Typer Game</title>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Typer Game</h1>
+        <p class="fraseDescricao">This is a game that consists of typing the below sentence as soon as possible within 3 seconds. You can restart the game only when it's over.</p>
+        <p class="frase">My name is Gummy Bear.</p>
+
+        <ul class="informacoes">
+            <li><i class="small material-icons icones">description</i> <span id="tamanho-frase">30</span> words</li> 
+            <li><i class="small material-icons icones">query_builder</i><span id="tempo-digitacao">3</span> seconds</li>
+        </ul>
+
+        <textarea class="campo-digitacao" rows="8" cols="100"></textarea>
+
+        <div class="botoes">
+            <a disabled id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red disabled">
+                <i class="material-icons">restore</i>
+            </a>
+            <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons">assignment</i>
+            </a>
+        </div>
+        <ul>
+            <li><span id="contador-caracteres">0</span> characters</li>
+            <li><span id="contador-palavras">0</span> words</li>
+        </ul>
+
+        <section class="placar">
+                <h3>Placar</h3>
+                <table class="centered bordered">
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>No. de palavras</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+
+    </div>
+
+  
+
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/placar.js"></script>
+</body>
+</html>
